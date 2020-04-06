@@ -54,6 +54,100 @@
           </li>
         </ul>
       </section>
+
+      <section class="reviews slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+
+        <input class="slider__input slider__input--input1" type="radio" id="btn-1" name="toggle-reviews" checked>
+        <input class="slider__input slider__input--input2" type="radio" id="btn-2" name="toggle-reviews">
+        <input class="slider__input slider__input--input3" type="radio" id="btn-3" name="toggle-reviews">
+
+        <div class="slider-wrapper">
+          <ul class="reviews__list slider__slides-list">
+            <li class="reviews__item slider__item">
+              <p class="reviews__author">Николай Петров</p>
+              <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+            </li>
+            <li class="reviews__item slider__item"><!--заменить текст-->
+              <p class="reviews__author">Автор 2</p>
+              <q class="reviews__text">Отзыв 2</q>
+            </li>
+            <li class="reviews__item slider__item"><!--заменить текст-->
+              <p class="reviews__author">Автор 3</p>
+              <q class="reviews__text">Отзыв 3</q>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="slider__controls">
+          <label class="slider__substitute slider__controls--substitute1" for="btn-1"></label>
+          <label class="slider__substitute slider__controls--substitute2" for="btn-2"></label>
+          <label class="slider__substitute slider__controls--substitute3" for="btn-3"></label>
+        </div>
+
+      </section>
+      
+      <section class="prices slider">
+        <h2 class="visually-hidden">Цены</h2>
+
+        <input class="slider__input slider__input--input4" type="radio" id="btn-4" name="toggle-prices" checked>
+        <input class="slider__input slider__input--input5" type="radio" id="btn-5" name="toggle-prices">
+        <input class="slider__input slider__input--input6" type="radio" id="btn-6" name="toggle-prices">
+
+        <div class="slider-wrapper">
+          <ul class="prices__list slider__slides-list">
+            <li class="prices__item slider__item">
+              <img class="prices__item--mini" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Минимальный">
+              <table class="features__list">
+                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>-</td></tr>
+                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
+              </table>
+            </li>
+            <li class="prices__item slider__item">
+              <img class="prices__item--standard" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Стандарт">
+              <table class="features__list">
+                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
+                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
+              </table>
+            </li>
+            <li class="prices__item slider__item">
+              <img class="prices__item--maxi" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Максимальный">
+              <table class="features__list">
+                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
+                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>+</td></tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slider__controls">
+          <label class="slider__substitute slider__controls--substitute4" for="btn-4"></label>
+          <label class="slider__substitute slider__controls--substitute5" for="btn-5"></label>
+          <label class="slider__substitute slider__controls--substitute6" for="btn-6"></label>
+        </div>
+
+      </section>
+
+      <section class="contacts">
+        <p class="contacts__offer">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__phone">
+          <h3 class="contacts__header">Звоните:</h3>
+          <a class="contacts__phone-no" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__email">
+          <h3 class="contacts__header">Пишите:</h3>
+          <a class="contacts__email-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__address">
+          <h3 class="contacts__header">Приезжайте в гости:</h3>
+          <a class="contacts__location-address">ул. Большая Конюшенная, 19/8</a>
+        </div>
+        <img class="contacts__location-map" src="https://via.placeholder.com/320x250" width="320" height="250" alt="Приезжайте в гости по адресу ул. Большая Конюшенная, 19 дробь 8">
+      </section>      
     </main>
   </body>
 </html>
