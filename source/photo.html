@@ -72,6 +72,24 @@
           </li>
         </ul>
       </section>
+      <section class="user-photo">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <div class="slogan user-photo__slogan">
+          <p class="user-photo__text">Затмите их всех!</p>
+          <p class="user-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <img class="user-photo__photo" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фото пользователя для загрузки">
+        <ul class="user-photo__customize-list">
+          <li class="user-photo__customize-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Обрезать"></button></li>
+          <li class="user-photo__customize-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Залить" disabled></button></li>
+          <li class="user-photo__customize-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Контраст" disabled></button></li>
+        </ul>
+        <input type="range" min="0" max="100" step="1" value="80">
+        <ul class="user-photo__controls-list">
+          <li class="user-photo__controls-item"><button class="button user-photo__post" type="button" name="button-post">Запостить</button></li>
+          <li class="user-photo__controls-item"><button class="button user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
+        </ul>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
