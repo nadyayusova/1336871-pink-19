@@ -78,8 +78,11 @@
           <p class="user-photo__text">Затмите их всех!</p>
           <p class="user-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <img class="user-photo__photo" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фото пользователя для загрузки">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="user-photo__photo">
+            <input class="visually-hidden" type="file" id="upload-user-img" aria-label="Фото пользователя для загрузки">
+            <label for="upload-user-img"><label>
+          <div>
           <ul class="user-photo__tools-list">
             <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
             <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
