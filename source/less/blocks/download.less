@@ -1,0 +1,66 @@
+.download {
+  background-color: @bg-color-accent;
+  padding: 28px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download__button {
+  font-family: "OpenSans Bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: @text-size-normal;
+  color: @text-color-contrast;
+  background-color: @bg-color-button;
+
+  min-width: @button-width;
+  min-height: @button-height;
+  box-sizing: border-box;
+  border: 3px solid @border-color-button-contrast;
+  border-top-right-radius: @border-radius-horiz @border-radius-vert;
+  border-top-left-radius: @border-radius-horiz @border-radius-vert;
+  border-bottom-right-radius: @border-radius-horiz @border-radius-vert;
+  border-bottom-left-radius: @border-radius-horiz @border-radius-vert;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__options-list {
+  padding-top: 32px;
+  padding-bottom: 22px;
+  max-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  // outline: green solid 1px;
+  // outline-offset: -1px;
+}
+
+.download__options-item {
+  font-size: 0;
+  min-width: 47px;
+  min-height: 56px;
+  // margin-bottom: 22px;
+
+  background-color: tomato;
+  outline: white solid 1px;
+  outline-offset: -1px;
+}
+
+.download__options-item:not(:nth-child(3n)) {
+  margin-right: 31px; // примерно пока
+}
+
+.download__description {
+  font-family: "OpenSans Light", "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: @text-size-small;
+  line-height: 1.75;
+  color: @text-color-contrast;
+  text-align: center;
+  margin: 0;
+}
