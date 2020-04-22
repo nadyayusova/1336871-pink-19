@@ -8,15 +8,15 @@
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип программы Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип программы Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню">Открыть главное меню</button>
         <ul class="main-nav__list site-list reset-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
       <div class="page-header__slogan">
@@ -25,7 +25,9 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Форма для участия в конкурсе фотографии</h1>
-      <p class="slogan page-main__slogan--form">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную катру!</p>
+      <div class="slogan page-main__slogan--form">
+        <p class="slogan__text page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="personal-data">
           <legend class="personal-data__title visually-hidden">Личные данные</legend>
