@@ -1,0 +1,40 @@
+.page-header {
+  font-family: "OpenSans Light", "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: @text-size-large;
+  line-height: 1.21;
+  background-color: @bg-color-menu;
+  color: @text-color-menu;
+}
+
+.page-header__slogan {
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 171px;
+  padding: 29px 30px;
+
+  // background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: @page-width-mobile 462px;
+  background-position-x: center;
+  background-position-y: -67px;
+}
+
+.index {
+  min-height: 396px;
+  padding: 22px 30px;
+
+  // background-image: url("../../img/iphone-hand-mobile@1x.png"),
+  //   url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, @page-width-mobile 462px;
+  background-position-x: 0, center;
+  background-position-y: 109px, -67px;
+}
+
+.page-header__slogan p {
+  margin: 0;
+}

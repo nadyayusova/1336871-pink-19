@@ -2,93 +2,113 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип программы Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип программы Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню">Открыть главное меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        <ul class="main-nav__list site-list reset-list">
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
       <div class="page-header__slogan">
-        <h2>Фотографии пользователей</h2>
+        <p>Фотографии пользователей</p>
       </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Галерея фотографий, обработка и загрузка фотографии пользователя</h1>
-      <p class="slogan page-main__slogan--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="slogan page-main__slogan">
+        <p class="slogan__text page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
-        <ul class="gallery__list">
+        <ul class="gallery__list reset-list">
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image gallery__image--panorama" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фото из галереи"></a>
-            <p class="gallery__author">Анна <span class="gallery__time-ago">(5 минут назад)</span></p>
-            <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
-            <button class="button gallery__likes" type="button">Нравится: 215</button>
+            <a class="gallery__fullsize-image" href="#">
+              <div class="gallery__panorama-wrapper">
+                <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото из галереи"></a>
+              </div>
+            <div class="gallery__message">
+              <p class="gallery__author">Анна <span class="gallery__time-ago">(5 минут назад)</span></p>
+              <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Левон <span class="gallery__time-ago">(5 часов назад)</span></p>
-            <p class="gallery__text">вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="button gallery__likes" type="button">Нравится: 356</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Левон <span class="gallery__time-ago">(5 часов назад)</span></p>
+              <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 356</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Антон <span class="gallery__time-ago">(12 часов назад)</span></p>
-            <p class="gallery__text">Соседи будут рады!</p>
-            <button class="button gallery__likes" type="button">Нравится: 666</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Антон <span class="gallery__time-ago">(12 часов назад)</span></p>
+              <p class="gallery__text">Соседи будут рады!</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 666</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Борис<span class="gallery__time-ago">(20 часов назад)</span></p>
-            <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="button gallery__likes" type="button">Нравится: 215</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Борис<span class="gallery__time-ago">(20 часов назад)</span></p>
+              <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Сергей <span class="gallery__time-ago">(25 часов назад)</span></p>
-            <p class="gallery__text">Самая кубанская в мире!</p>
-            <button class="button gallery__likes" type="button">Нравится: 4</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Сергей <span class="gallery__time-ago">(25 часов назад)</span></p>
+              <p class="gallery__text">Самая кубанская в мире!</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 4</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Максим <span class="gallery__time-ago">(40 часов назад)</span></p>
-            <p class="gallery__text">Где снег-то?</p>
-            <button class="button gallery__likes" type="button">Нравится: 150</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Максим <span class="gallery__time-ago">(40 часов назад)</span></p>
+              <p class="gallery__text">Где снег-то?</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 150</span></button>
+            </div>
           </li>
           <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из галереи"></a>
-            <p class="gallery__author">Надежда <span class="gallery__time-ago">(45 часов назад)</span></p>
-            <p class="gallery__text">Всем GM и взаимные лайки!</p>
-            <button class="button gallery__likes" type="button">Нравится: 2560</button>
+            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+            <div class="gallery__message">
+              <p class="gallery__author">Надежда <span class="gallery__time-ago">(45 часов назад)</span></p>
+              <p class="gallery__text">Всем GM и взаимные лайки!</p>
+              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 2560</span></button>
+            </div>
           </li>
         </ul>
       </section>
       <section class="user-photo">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <div class="slogan user-photo__slogan">
-          <p class="user-photo__text">Затмите их всех!</p>
-          <p class="user-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="slogan__text">Затмите их всех!</p>
+          <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="user-photo__photo">
             <input class="visually-hidden" type="file" id="upload-user-img" aria-label="Фото пользователя для загрузки">
             <label for="upload-user-img"><label>
           <div>
-          <ul class="user-photo__tools-list">
+          <ul class="user-photo__tools-list reset-list">
             <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
             <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
             <li class="user-photo__tools-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Инструмент Контраст" disabled></button></li>
           </ul>
-          <ul class="user-photo__customize-list">
+          <ul class="user-photo__customize-list reset-list">
             <li class="user-photo__customize-item customize-item--crop">
               <input class="user-photo__range" type="range" name="range-crop" min="0" max="100" step="1" value="80" aria-label="Настройка обрезки">
             </li>
@@ -99,7 +119,7 @@
               <input class="user-photo__range" type="range" name="range-contrast" min="0" max="100" step="1" value="80" aria-label="Настройка контраста">
             </li>
           </ul>
-          <ul class="user-photo__controls-list">
+          <ul class="user-photo__controls-list reset-list">
             <li class="user-photo__controls-item"><button class="button user-photo__post" type="submit" name="button-post">Запостить</button></li>
             <li class="user-photo__controls-item"><button class="button user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
           </ul>
@@ -108,10 +128,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <img class="page-footer__logo--image" src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип программы Pink">
+        <img class="page-footer__logo--image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип программы Pink">
       </div>
       <div class="page-footer__social-icons">
-        <ul class="social-icons__list">
+        <ul class="social-icons__list reset-list">
           <li class="social-icons__item"><a href="#">Twitter</a></li>
           <li class="social-icons__item"><a href="#">Facebook</a></li>
           <li class="social-icons__item"><a href="#">Youtube</a></li>
@@ -120,7 +140,7 @@
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-description">Разработано</p>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-          <img class="page-footer__copyright-image" src="https://via.placeholder.com/30x30" width="30" height="30" alt="HTML Academy">
+          <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="40" alt="HTML Academy">
         </a>
       </div>
     </footer>
