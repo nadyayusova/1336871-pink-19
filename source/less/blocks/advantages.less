@@ -1,13 +1,11 @@
 .advantages {
   padding: 52px 20px 318px;
-  /*фон не готов*/
-  background-color: @bg-color-sup;
-  background-image: url("../../img/bg-triangle-white.svg"),
-                    url("../../img/iphone-screen-mobile@1x.png");
+  background-image: url("../../img/iphone-screen-mobile@1x.png"),
+    linear-gradient(-6deg, @bg-color-sup 0%, @bg-color-sup 96%, @bg-color-basic 96%, @bg-color-basic 100%);
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, initial;
-  background-position-x: center, center;
-  background-position-y: 0, 510px;
+  background-size: initial, auto;
+  background-position-x: center, 0;
+  background-position-y: 510px, 1px;
 }
 
 .advantages__item {
