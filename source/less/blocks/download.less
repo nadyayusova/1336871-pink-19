@@ -8,24 +8,21 @@
 }
 
 .download__button {
-  font-family: "OpenSans Bold", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: @text-size-normal;
   color: @text-color-contrast;
   background-color: @bg-color-button;
-
-  min-width: @button-width;
-  min-height: @button-height;
-  box-sizing: border-box;
   border: 3px solid @border-color-button-contrast;
-  border-top-right-radius: @border-radius-horiz @border-radius-vert;
-  border-top-left-radius: @border-radius-horiz @border-radius-vert;
-  border-bottom-right-radius: @border-radius-horiz @border-radius-vert;
-  border-bottom-left-radius: @border-radius-horiz @border-radius-vert;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.download__button--iphone,
+.download__button--android,
+.download__button--windows {
+  font-size: 0;
+  border: none;
+  border-radius: 0;
 }
 
 .download__options-list {
@@ -41,7 +38,6 @@
 }
 
 .download__options-item {
-  font-size: 0;
   min-width: 47px;
   min-height: 56px;
   // margin-bottom: 22px;

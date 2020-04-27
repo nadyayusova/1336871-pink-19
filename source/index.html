@@ -68,7 +68,7 @@
             <li class="reviews__item slider__item">
               <p class="reviews__author">Николай Петров</p>
               <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+                А еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!</q>
             </li>
             <li class="reviews__item slider__item"><!--заменить текст-->
               <p class="reviews__author">Автор 2</p>
@@ -92,34 +92,37 @@
       <section class="prices slider">
         <h2 class="visually-hidden">Цены</h2>
 
-        <input class="slider__input slider__input--input4" type="radio" id="btn-4" name="toggle-prices" checked>
-        <input class="slider__input slider__input--input5" type="radio" id="btn-5" name="toggle-prices">
+        <input class="slider__input slider__input--input4" type="radio" id="btn-4" name="toggle-prices">
+        <input class="slider__input slider__input--input5" type="radio" id="btn-5" name="toggle-prices" checked>
         <input class="slider__input slider__input--input6" type="radio" id="btn-6" name="toggle-prices">
 
         <div class="slider-wrapper">
           <ul class="prices__list slider__slides-list">
             <li class="prices__item slider__item">
-              <img class="prices__item--mini" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Минимальный">
-              <table class="features__list">
-                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
-                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>-</td></tr>
-                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
+              <table class="prices__table prices__item--mini">
+                <tr class="prices__row--name"><td colspan="2">Минимальный</td></tr>
+                <tr class="prices__row--price"><td colspan="2">x,xx USD</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Смайлики</p></td><td>-</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
               </table>
             </li>
             <li class="prices__item slider__item">
-              <img class="prices__item--standard" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Стандарт">
-              <table class="features__list">
-                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
-                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
-                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
+              <table class="prices__table prices__item--standard">
+                <tr class="prices__row--name"><td colspan="2">Стандарт</td></tr>
+                <tr class="prices__row--price"><td colspan="2">3,99 USD</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Комментарии</p></td><td>-</td></tr>
               </table>
             </li>
             <li class="prices__item slider__item">
-              <img class="prices__item--maxi" src="https://via.placeholder.com/276x94" width="276" height="94" alt="Цена тарифа Максимальный">
-              <table class="features__list">
-                <tr class="features__item"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
-                <tr class="features__item"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
-                <tr class="features__item"><td><p class="features__text">Комментарии</p></td><td>+</td></tr>
+              <table class="prices__table prices__item--maxi">
+                <tr class="prices__row--name"><td colspan="2">Максимальный</td></tr>
+                <tr class="prices__row--price"><td colspan="2">x,xx USD</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Розовый фильтр</p></td><td>+</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Смайлики</p></td><td>+</td></tr>
+                <tr class="prices__row"><td><p class="features__text">Комментарии</p></td><td>+</td></tr>
               </table>
             </li>
           </ul>
@@ -138,18 +141,19 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__header">Звоните:</h3>
-            <a class="contacts__phone-no" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__content contacts__content--phone-no" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__header">Пишите:</h3>
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__content contacts__content--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__header">Приезжайте в гости:</h3>
-            <a class="contacts__address">ул. Большая Конюшенная, 19/8</a>
+            <a class="contacts__content contacts__content--address">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img class="contacts__location-map" src="https://via.placeholder.com/320x250" width="320" height="250" alt="Приезжайте в гости по адресу ул. Большая Конюшенная, 19 дробь 8">
+        <!-- <img class="contacts__location-map" src="https://via.placeholder.com/320x250" width="320" height="250" alt="Приезжайте в гости по адресу ул. Большая Конюшенная, 19 дробь 8"> -->
+        <div class="contacts__location-map"></div>
       </address>
     </main>
   </body>

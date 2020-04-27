@@ -1,0 +1,31 @@
+.achievements,
+.achievements__title {
+  background-color: @bg-color-sup;
+}
+
+.achievements__item {
+  margin-top: 20px;
+  margin-bottom: 43px;
+}
+
+.achievements__label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 32px;
+  background-color: @bg-color-basic;
+  border: 1px solid @border-color-checkbox;
+  cursor: pointer;
+}
+
+.achievements__field:checked + .achievements__label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.achievements__field:focus + .achievements__label::before {
+  box-shadow: 0 0 1px 1px @input-shadow-color;
+}

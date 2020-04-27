@@ -1,0 +1,40 @@
+.applications,
+.applications__title {
+  background-color: @bg-color-sup;
+}
+
+.applications {
+  padding-bottom: 5px;
+}
+
+.applications__item {
+  margin-top: 15px;
+  margin-bottom: 37px;
+}
+
+.applications__label {
+  margin-bottom: 0;
+}
+
+.applications__label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 32px;
+  background-color: @bg-color-basic;
+  border: 1px solid @border-color-checkbox;
+  cursor: pointer;
+}
+
+.applications__field:checked + .applications__label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.applications__field:focus + .applications__label::before {
+  box-shadow: 0 0 1px 1px @input-shadow-color;
+}

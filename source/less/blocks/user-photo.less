@@ -1,3 +1,62 @@
+.user-photo {
+  margin-bottom: -8px;
+}
+
 .user-photo__slogan {
-  padding: 23px 30px 48px;
+  padding: 23px 30px 42px;
+}
+
+.user-photo__form {
+  padding: 20px 20px 30px;
+  background-color: @bg-color-sup;
+}
+
+.user-photo__photo {
+  min-height: 375px;
+  min-width: 100%;
+
+  outline: black solid 1px;
+  outline-offset: -1px;
+}
+
+.user-photo__tools-list {
+  padding-top: 35px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-photo__tools-item {
+  font-size: 0;
+
+  background-color: tomato;
+  outline: black solid 1px;
+  outline-offset: -1px;
+}
+
+.user-photo__tools-item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.user-photo__crop,
+.user-photo__fill,
+.user-photo__contrast {
+  min-width: 55px;
+  min-height: 55px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 0;
+
+  outline: black solid 1px;
+  outline-offset: -1px;
+}
+
+.user-photo__controls-list {
+  margin-top: 60px;
+}
+
+.user-photo__controls-item {
+  margin-bottom: 12px;
 }
