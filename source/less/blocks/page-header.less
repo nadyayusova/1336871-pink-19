@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   color: @text-color-menu;
   background-color: @bg-color-menu;
 
@@ -7,6 +6,12 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center 259px;
+}
+
+.page-header__controls {
+  position: relative;
+  min-height: 70px;
+  border-bottom: 1px solid @bg-color-menu-shadow;
 }
 
 .page-header__logo {
@@ -57,6 +62,10 @@
     background-position: center 255px;
   }
 
+  .page-header__controls {
+    min-height: 110px;
+  }
+
   .page-header__logo {
     top: 20px;
     left: 21px;
@@ -88,10 +97,16 @@
 
 @media (min-width: @page-width-desktop-inner) {
   .page-header {
+    position: relative;
+
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center 0;
+  }
+
+  .page-header__controls {
+    border: none;
   }
 
   .page-header__logo {
