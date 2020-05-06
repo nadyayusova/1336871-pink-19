@@ -1,13 +1,18 @@
-.button {
+.button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: @button-width;
+  min-height: @button-height;
+  box-sizing: border-box;
+
   font-family: "OpenSans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: @text-size-normal;
   color: @text-color-accent;
   background-color: transparent;
 
-  min-width: @button-width;
-  min-height: @button-height;
-  box-sizing: border-box;
   border: 3px solid @text-color-accent;
   border-top-right-radius: @border-radius-horiz @border-radius-vert;
   border-top-left-radius: @border-radius-horiz @border-radius-vert;
@@ -15,7 +20,7 @@
   border-bottom-left-radius: @border-radius-horiz @border-radius-vert;
 }
 
-.button:disabled {
+.button-text:disabled {
   color: @text-color-inactive;
   border-color: @text-color-inactive;
 }

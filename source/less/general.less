@@ -1,11 +1,13 @@
 body {
+  min-width: @page-width-mobile;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: normal;
-  font-size: 14px;
-  color: #000000;
-  background-color: #ffffff;
+  font-size: @text-size-small;
+  line-height: 1.5;
+  color: @text-color-plain;
+  background-color: @bg-color-basic;
 }
 
 img {
@@ -15,10 +17,20 @@ img {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: @text-color-plain;
 }
 
-.reset-list {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.reset-list() {
   list-style-type: none;
   padding: 0;
   margin: 0;

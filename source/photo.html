@@ -2,148 +2,156 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип программы Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню">Открыть главное меню</button>
-        <ul class="main-nav__list site-list reset-list">
-          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__slogan">
-        <p>Фотографии пользователей</p>
-      </div>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Галерея фотографий, обработка и загрузка фотографии пользователя</h1>
-      <div class="slogan page-main__slogan">
-        <p class="slogan__text page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      </div>
-      <section class="gallery">
-        <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
-        <ul class="gallery__list reset-list">
-          <li class="gallery__item">
-            <div class="gallery__panorama-wrapper">
-              <a class="gallery__fullsize-image" href="#">
-                <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото из галереи">
-              </a>
-            </div>
-            <div class="gallery__message">
-              <p class="gallery__author">Анна <span class="gallery__time-ago">(5 минут назад)</span></p>
-              <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Левон <span class="gallery__time-ago">(5 часов назад)</span></p>
-              <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 356</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Антон <span class="gallery__time-ago">(12 часов назад)</span></p>
-              <p class="gallery__text">Соседи будут рады!</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 666</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Борис <span class="gallery__time-ago">(20 часов назад)</span></p>
-              <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Сергей <span class="gallery__time-ago">(25 часов назад)</span></p>
-              <p class="gallery__text">Самая кубанская в мире!</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 4</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Максим <span class="gallery__time-ago">(40 часов назад)</span></p>
-              <p class="gallery__text">Где снег-то?</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 150</span></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
-            <div class="gallery__message">
-              <p class="gallery__author">Надежда <span class="gallery__time-ago">(45 часов назад)</span></p>
-              <p class="gallery__text">Всем GM и взаимные лайки!</p>
-              <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 2560</span></button>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="user-photo">
-        <h2 class="visually-hidden">Фотография пользователя</h2>
-        <div class="slogan user-photo__slogan">
-          <p class="slogan__text">Затмите их всех!</p>
-          <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <div class="page-header__controls">
+          <a class="page-header__logo">
+            <!-- <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип программы Pink"> -->
+            <div class="page-header__logo-image"></div>
+          </a>
         </div>
-        <form class="user-photo__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <div class="user-photo__photo">
-            <input class="visually-hidden" type="file" id="upload-user-img" aria-label="Фото пользователя для загрузки">
-            <label class="user-photo__label" for="upload-user-img"><label>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <!-- Классы main-nav--opened, main-nav--closed переключают состояние меню. -->
+          <button class="main-nav__toggle button-icon" type="button" aria-label="Открыть главное меню"></button>
+          <ul class="main-nav__list site-list">
+            <!-- <li class="site-list__item">Декоративный пункт меню</li> -->
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__slogan">
+          <p class="page-header__text">Фотографии<br>пользователей</p>
+        </div>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Галерея фотографий, обработка и загрузка фотографии пользователя</h1>
+        <div class="slogan page-main__slogan">
+          <p class="slogan__text page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+        <section class="gallery">
+          <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <div class="gallery__panorama-wrapper">
+                <a class="gallery__fullsize-image" href="#">
+                  <img class="gallery__image gallery__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото из галереи">
+                </a>
+              </div>
+              <div class="gallery__message">
+                <p class="gallery__author">Анна <span class="gallery__time-ago">(5 минут назад)</span></p>
+                <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Левон <span class="gallery__time-ago">(5 часов назад)</span></p>
+                <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 356</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Антон <span class="gallery__time-ago">(12 часов назад)</span></p>
+                <p class="gallery__text">Соседи будут рады!</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 666</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Борис <span class="gallery__time-ago">(20 часов назад)</span></p>
+                <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 215</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Сергей <span class="gallery__time-ago">(25 часов назад)</span></p>
+                <p class="gallery__text">Самая кубанская в мире!</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 4</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Максим <span class="gallery__time-ago">(40 часов назад)</span></p>
+                <p class="gallery__text">Где снег-то?</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 150</span></button>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__fullsize-image" href="#"><img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото из галереи"></a>
+              <div class="gallery__message">
+                <p class="gallery__author">Надежда <span class="gallery__time-ago">(45 часов назад)</span></p>
+                <p class="gallery__text">Всем GM и взаимные лайки!</p>
+                <button class="button gallery__likes" type="button"><span class="gallery__button-text">Нравится: 2560</span></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- <section class="user-photo">
+          <h2 class="visually-hidden">Фотография пользователя</h2>
+          <div class="slogan user-photo__slogan">
+            <p class="slogan__text">Затмите их всех!</p>
+            <p class="slogan__text">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-          <ul class="user-photo__tools-list reset-list">
-            <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
-            <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
-            <li class="user-photo__tools-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Инструмент Контраст" disabled></button></li>
+          <form class="user-photo__form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="user-photo__photo">
+              <input class="visually-hidden" type="file" id="upload-user-img" aria-label="Фото пользователя для загрузки">
+              <label class="user-photo__label" for="upload-user-img"><label>
+            </div>
+            <ul class="user-photo__tools-list">
+              <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
+              <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
+              <li class="user-photo__tools-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Инструмент Контраст" disabled></button></li>
+            </ul>
+            <ul class="user-photo__customize-list">
+              <li class="user-photo__customize-item customize-item--crop">
+                <input class="user-photo__range" type="range" name="range-crop" min="0" max="100" step="1" value="80" aria-label="Настройка обрезки">
+              </li>
+              <li class="user-photo__customize-item customize-item--fill hidden">
+                <input class="user-photo__range" type="range" name="range-fill" min="0" max="100" step="1" value="80" aria-label="Настройка заливки">
+              </li>
+              <li class="user-photo__customize-item customize-item--contrast hidden">
+                <input class="user-photo__range" type="range" name="range-contrast" min="0" max="100" step="1" value="80" aria-label="Настройка контраста">
+              </li>
+            </ul>
+            <ul class="user-photo__controls-list">
+              <li class="user-photo__controls-item"><button class="button user-photo__post" type="submit" name="button-post">Запостить</button></li>
+              <li class="user-photo__controls-item"><button class="button user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
+            </ul>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип программы Pink">
+        </div>
+        <div class="page-footer__social-icons">
+          <ul class="social-icons__list">
+            <li class="social-icons__item"><a href="#">Twitter</a></li>
+            <li class="social-icons__item"><a href="#">Facebook</a></li>
+            <li class="social-icons__item"><a href="#">Youtube</a></li>
           </ul>
-          <ul class="user-photo__customize-list reset-list">
-            <li class="user-photo__customize-item customize-item--crop">
-              <input class="user-photo__range" type="range" name="range-crop" min="0" max="100" step="1" value="80" aria-label="Настройка обрезки">
-            </li>
-            <li class="user-photo__customize-item customize-item--fill hidden">
-              <input class="user-photo__range" type="range" name="range-fill" min="0" max="100" step="1" value="80" aria-label="Настройка заливки">
-            </li>
-            <li class="user-photo__customize-item customize-item--contrast hidden">
-              <input class="user-photo__range" type="range" name="range-contrast" min="0" max="100" step="1" value="80" aria-label="Настройка контраста">
-            </li>
-          </ul>
-          <ul class="user-photo__controls-list reset-list">
-            <li class="user-photo__controls-item"><button class="button user-photo__post" type="submit" name="button-post">Запостить</button></li>
-            <li class="user-photo__controls-item"><button class="button user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
-          </ul>
-        </form>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__logo">
-        <img class="page-footer__logo--image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип программы Pink">
-      </div>
-      <div class="page-footer__social-icons">
-        <ul class="social-icons__list reset-list">
-          <li class="social-icons__item"><a href="#">Twitter</a></li>
-          <li class="social-icons__item"><a href="#">Facebook</a></li>
-          <li class="social-icons__item"><a href="#">Youtube</a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-description">Разработано</p>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-          <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="40" alt="HTML Academy">
-        </a>
-      </div>
-    </footer>
+        </div>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-description">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="40" alt="HTML Academy">
+          </a>
+        </div>
+      </footer> -->
+    </div>
   </body>
 </html>

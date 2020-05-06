@@ -1,6 +1,6 @@
 .download {
   background-color: @bg-color-accent;
-  padding: 28px 20px;
+  padding: 27px 20px 30px;
 
   display: flex;
   flex-direction: column;
@@ -9,23 +9,11 @@
 
 .download__button {
   color: @text-color-contrast;
-  background-color: @bg-color-button;
-  border: 3px solid @border-color-button-contrast;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.download__button--iphone,
-.download__button--android,
-.download__button--windows {
-  font-size: 0;
-  border: none;
-  border-radius: 0;
+  border-color: @border-color-button-contrast;
 }
 
 .download__options-list {
+  .reset-list;
   padding-top: 32px;
   padding-bottom: 22px;
   max-width: 240px;
@@ -59,4 +47,45 @@
   color: @text-color-contrast;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: @page-width-tablet) {
+  .download {
+    position: absolute;
+    top: -378px;
+    left: 0;
+    z-index: 2;
+    width: 340px;
+    background-color: transparent;
+  }
+
+  .download__button {
+    min-width: 300px;
+  }
+
+  .download__options-list {
+    padding-top: 48px;
+    padding-bottom: 34px;
+  }
+
+  .download__description {
+    font-size: @text-size-normal;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: @page-width-desktop-inner) {
+  .download {
+    top: -430px;
+    left: 109px;
+  }
+
+  .download__button {
+    font-size: 21px;
+  }
+
+  .download__options-list {
+    padding-top: 68px;
+    padding-bottom: 54px;
+  }
 }
