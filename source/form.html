@@ -30,10 +30,12 @@
           <p class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
         </div>
       </header>
-      <!-- <main class="page-main">
+      <main class="page-main">
         <h1 class="visually-hidden">Форма для участия в конкурсе фотографии</h1>
         <div class="slogan page-main__slogan--form">
-          <p class="slogan__text page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+          <p class="slogan__text page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+            <span class="page-main__more-text">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="personal-data fields-group">
@@ -83,7 +85,7 @@
             </ul>
           </fieldset>
           <fieldset class="contacts-form fields-group">
-            <legend class="contacts-form__title fields-group__legend visually-hidden">Контакты</legend>
+            <legend class="contacts-form__title fields-group__legend contacts-form__title--hidden">Контактная информация</legend>
             <ul class="contacts-form__list">
               <li class="contacts-form__item fields-group__item">
                 <label class="contacts-form__label fields-group__label-accent" for="phone-no">Номер телефона</label>
@@ -114,10 +116,10 @@
           </fieldset>
           <fieldset class="emotions fields-group fields-group__item">
             <legend class="emotions__title fields-group__legend">Опишите свои эмоции</legend>
-            <textarea class="emotions__description fields-group__text-input" name="emotions-descr" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="emotions__description fields-group__text-input" name="emotions-descr" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="button form__send-button" type="submit">Отправить форму</button>
-          <p class="form__notes"><span class="form__text-accent">*</span> &mdash; обязательные поля</p>
+          <button class="button-text form__send-button" type="submit">Отправить форму</button>
+          <p class="form__notes"><span class="form__text-accent">*</span> &mdash; обязательные <span class="page-main__more-notes">для заполнения </span>поля</p>
         </form>
       </main>
       <footer class="page-footer">
@@ -137,7 +139,7 @@
             <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="40" alt="HTML Academy">
           </a>
         </div>
-      </footer> -->
+      </footer>
     </div>
   </body>
 </html>
