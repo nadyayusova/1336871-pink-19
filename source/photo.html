@@ -10,7 +10,7 @@
     <div class="page-wrapper">
       <header class="page-header">
         <div class="page-header__controls">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <!-- <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип программы Pink"> -->
             <div class="page-header__logo-image"></div>
           </a>
@@ -100,7 +100,7 @@
             </li>
           </ul>
         </section>
-        <!-- <section class="user-photo">
+        <section class="user-photo">
           <h2 class="visually-hidden">Фотография пользователя</h2>
           <div class="slogan user-photo__slogan">
             <p class="slogan__text">Затмите их всех!</p>
@@ -111,30 +111,32 @@
               <input class="visually-hidden" type="file" id="upload-user-img" aria-label="Фото пользователя для загрузки">
               <label class="user-photo__label" for="upload-user-img"><label>
             </div>
-            <ul class="user-photo__tools-list">
-              <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
-              <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
-              <li class="user-photo__tools-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Инструмент Контраст" disabled></button></li>
-            </ul>
-            <ul class="user-photo__customize-list">
-              <li class="user-photo__customize-item customize-item--crop">
-                <input class="user-photo__range" type="range" name="range-crop" min="0" max="100" step="1" value="80" aria-label="Настройка обрезки">
-              </li>
-              <li class="user-photo__customize-item customize-item--fill hidden">
-                <input class="user-photo__range" type="range" name="range-fill" min="0" max="100" step="1" value="80" aria-label="Настройка заливки">
-              </li>
-              <li class="user-photo__customize-item customize-item--contrast hidden">
-                <input class="user-photo__range" type="range" name="range-contrast" min="0" max="100" step="1" value="80" aria-label="Настройка контраста">
-              </li>
-            </ul>
-            <ul class="user-photo__controls-list">
-              <li class="user-photo__controls-item"><button class="button user-photo__post" type="submit" name="button-post">Запостить</button></li>
-              <li class="user-photo__controls-item"><button class="button user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
-            </ul>
+            <div class="user-photo__customization">
+              <ul class="user-photo__tools-list">
+                <li class="user-photo__tools-item"><button class="button user-photo__crop" type="button" name="button-crop" aria-label="Инструмент Обрезать"></button></li>
+                <li class="user-photo__tools-item"><button class="button user-photo__fill" type="button" name="button-fill" aria-label="Инструмент Залить" disabled></button></li>
+                <li class="user-photo__tools-item"><button class="button user-photo__contrast" type="button" name="button-contrast" aria-label="Инструмент Контраст" disabled></button></li>
+              </ul>
+              <ul class="user-photo__customize-list">
+                <li class="user-photo__customize-item customize-item--crop">
+                  <input class="user-photo__range" type="range" name="range-crop" min="0" max="100" step="1" value="80" aria-label="Настройка обрезки">
+                </li>
+                <li class="user-photo__customize-item customize-item--fill hidden">
+                  <input class="user-photo__range" type="range" name="range-fill" min="0" max="100" step="1" value="80" aria-label="Настройка заливки">
+                </li>
+                <li class="user-photo__customize-item customize-item--contrast hidden">
+                  <input class="user-photo__range" type="range" name="range-contrast" min="0" max="100" step="1" value="80" aria-label="Настройка контраста">
+                </li>
+              </ul>
+              <ul class="user-photo__controls-list">
+                <li class="user-photo__controls-item"><button class="button-text user-photo__post" type="submit" name="button-post">Запостить</button></li>
+                <li class="user-photo__controls-item"><button class="button-text user-photo__cancel" type="button" name="button-cancel" disabled>Отмена</button></li>
+              </ul>
+              </div>
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--photo">
         <div class="page-footer__logo">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип программы Pink">
         </div>
@@ -151,7 +153,7 @@
             <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="40" alt="HTML Academy">
           </a>
         </div>
-      </footer> -->
+      </footer>
     </div>
   </body>
 </html>

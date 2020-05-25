@@ -62,3 +62,40 @@
 .page-footer__copyright-link {
   font-size: 0;
 }
+
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: @page-width-tablet) {
+  .page-footer {
+    padding: 63px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer--index {
+    padding: 31px 20px;
+    display: flex;
+  }
+
+  .social-icons__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: @page-width-desktop-inner) {
+  .page-footer {
+    padding: 33px 0;
+    min-height: 140px;
+    justify-content: space-around;
+  }
+
+  .page-footer--index {
+    min-height: 200px;
+  }
+
+  .page-footer--photo {
+    min-height: 270px;
+  }
+}

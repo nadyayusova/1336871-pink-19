@@ -1,20 +1,23 @@
 .reviews {
   width: @page-width-mobile;
-  padding: 48px 15px 30px;
+  padding: 48px 20px 30px;
   background-color: @bg-color-basic;
   box-sizing: border-box;
 }
-// исправить цвета
 
 .reviews__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  min-height: 247px;
+  .reset-list;
+  min-height: 200px;
+  margin-bottom: 31px;
 }
 
 .reviews__item {
   text-align: center;
+}
+
+// так как не реализован слайдер
+.reviews__item:not(:first-child) {
+  display: none;
 }
 
 .reviews__author {
@@ -26,10 +29,81 @@
   margin: 0 0 19px;
 }
 
+.reviews__author--after {
+  display: none;
+}
+
 .reviews__text {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
   font-size: @text-size-small;
   line-height: 2.2;
   color: @text-color-plain;
+}
+
+.reviews__toggles {
+  margin: 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.slider__toggle {
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: @page-width-tablet) {
+  .reviews {
+    width: @page-width-tablet;
+    padding: 155px 15px 17px;
+  }
+
+  .reviews__list {
+    margin-bottom: 19px;
+  }
+
+  .reviews__text {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: @text-size-normal;
+    line-height: 1.7;
+  }
+
+  .reviews__author--before {
+    display: none;
+  }
+
+  .reviews__author--after {
+    display: block;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+    margin: 40px 0 15px;
+  }
+
+  .reviews__author-age {
+    margin: 0 0 19px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: @page-width-desktop-inner) {
+  .reviews {
+    width: @page-width-desktop;
+    padding: 328px 250px 9px;
+  }
+
+  .reviews__author {
+    font-size: @text-size-large;
+    margin: 39px 0 12px;
+  }
+
+  .reviews__author-age {
+    font-size: @text-size-normal;
+  }
+
+  .slider__toggle {
+    display: none;
+  }
 }

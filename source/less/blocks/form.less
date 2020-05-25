@@ -1,6 +1,12 @@
-.form_send-button {
-  margin-top: 25px;
-  margin-left: 20px;
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: @page-width-mobile;
+}
+
+.form__send-button {
+  margin-top: 27px;
   margin-bottom: 26px;
   min-height: 63px;
   text-transform: uppercase;
@@ -12,9 +18,45 @@
 
 .form__notes {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .form__text-accent {
   color: @text-color-accent;
+}
+
+@media (min-width: @page-width-tablet) {
+  .form {
+    justify-content: space-between;
+    width: @page-width-tablet;
+  }
+
+  .form__send-button {
+    order: 6;
+    min-width: 300px;
+    margin-left: 20px;
+  }
+
+  .form__notes {
+    order: 7;
+    margin-top: 49px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: @page-width-desktop-inner) {
+  .form {
+    justify-content: space-between;
+    width: @page-width-desktop;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__send-button {
+    margin-left: 10px;
+    margin-top: 24px;
+  }
+
+  .form__notes {
+    margin-right: 10px;
+  }
 }

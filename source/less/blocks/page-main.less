@@ -6,6 +6,11 @@
   padding: 45px 20px 14px;
 }
 
+.page-main__more-text,
+.page-main__more-notes {
+  display: none;
+}
+
 @media (min-width: @page-width-tablet) {
   .page-main {
     position: relative;
@@ -14,10 +19,28 @@
   .page-main__slogan {
     padding: 92px 60px 76px;
   }
+
+  .page-main__slogan--form {
+    padding: 92px 75px 19px;
+  }
+
+  .page-main__more-text {
+    display: inline;
+    vertical-align: baseline;
+  }
 }
 
 @media (min-width: @page-width-desktop-inner) {
   .page-main__slogan {
     padding: 92px 295px 88px;
+  }
+
+  .page-main__slogan--form {
+    padding: 92px 200px 60px;
+  }
+
+  .page-main__more-notes {
+    display: inline;
+    vertical-align: baseline;
   }
 }
