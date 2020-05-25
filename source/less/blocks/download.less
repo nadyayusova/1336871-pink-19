@@ -26,17 +26,25 @@
 }
 
 .download__options-item {
-  min-width: 47px;
-  min-height: 56px;
-  // margin-bottom: 22px;
-
-  background-color: tomato;
-  outline: white solid 1px;
-  outline-offset: -1px;
+  min-width: 48px;
+  min-height: 57px;
 }
 
 .download__options-item:not(:nth-child(3n)) {
   margin-right: 31px; // примерно пока
+}
+
+.download__options-item--iphone {
+  background: url("../img/logo-apple.svg") center center no-repeat;
+}
+
+.download__options-item--android {
+  min-width: 50px;
+  background: url("../img/logo-android.svg") center 8px no-repeat;
+}
+
+.download__options-item--windows {
+  background: url("../img/logo-microsoft.svg") center 12px no-repeat;
 }
 
 .download__description {
@@ -64,8 +72,8 @@
   }
 
   .download__options-list {
-    padding-top: 48px;
-    padding-bottom: 34px;
+    padding-top: 45px;
+    padding-bottom: 35px;
   }
 
   .download__description {
@@ -85,7 +93,7 @@
   }
 
   .download__options-list {
-    padding-top: 68px;
+    padding-top: 67px;
     padding-bottom: 54px;
   }
 }

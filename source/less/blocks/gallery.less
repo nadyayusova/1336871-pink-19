@@ -42,6 +42,8 @@
 }
 
 .gallery__message {
+  display: flex;
+  flex-wrap: wrap;
   width: ~"calc(@{page-width-mobile} - 40px)";
   padding: 18px 17px 22px;
   background-color: @bg-color-sup;
@@ -52,7 +54,11 @@
   font-size: @text-size-small;
   color: @bg-color-menu;
   line-height: 1.75;
+  min-width: 70%;
   margin: 0;
+  // временно
+  // outline: red solid 1px;
+  // outline-offset: -1px;
 }
 
 .gallery__author {
@@ -78,6 +84,7 @@
   margin-top: 16px;
   padding: 0;
   font-size: 0;
+  text-align: left;
   border: none;
   border-radius: 0;
 
@@ -126,14 +133,61 @@
     outline-offset: -1px;
   }
 
+  .gallery__button-text::before {
+    display: none;
+  }
+
+  .gallery__likes {
+    position: relative;
+  }
+
+  .gallery__button-text::after {
+    content: "";
+    height: 14px;
+    width: 13px;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
   .gallery__item:first-child {
     width: ~"calc(@{page-width-tablet} - 20px)";
+
+    .gallery__message {
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .gallery__author {
+      order: 1;
+    }
+
+    .gallery__text {
+      order: 3;
+    }
+
+    .gallery__likes {
+      order: 2;
+    }
+
+    .gallery__button-text {
+      margin-right: 40px;
+    }
     // временно
     height: 680px;
   }
 
   .gallery__item:not(:first-child) {
     width: 320px;
+
+    .gallery__likes {
+      width: 100%;
+    }
     // временно
     height: 480px;
   }

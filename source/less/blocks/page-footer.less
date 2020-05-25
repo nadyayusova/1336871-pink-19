@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 47px 70px;
+  padding: 44px 70px;
 
   display: flex;
   flex-direction: column;
@@ -7,36 +7,47 @@
 }
 
 .page-footer__logo {
+  width: 146px;
+  height: 60px;
   font-size: 0;
+  background: url("../img/logo-pink-blue-mobile.svg") center 2px no-repeat;
 }
 
-.social-icons__list {
+.page-footer__social-list {
   .reset-list;
-  padding-top: 40px;
-  padding-bottom: 32px;
+  padding-top: 21px;
+  padding-bottom: 33px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  // outline: black solid 1px;
-  // outline-offset: -1px;
 }
 
-.social-icons__item {
-  font-size: 0;
+.page-footer__social-item {
   min-width: 50px;
   min-height: 50px;
   box-sizing: border-box;
+
   border-radius: 50%;
   border: 2px solid @border-color-button-social;
+  fill: @text-color-accent;
 
-  background-color: tomato;
-  outline: black solid 1px;
-  outline-offset: -1px;
+  font-size: 0;
+  text-align: center;
+
+  svg {
+    display: inline-block;
+    margin-top: 17px;
+  }
 }
 
-.social-icons__item:not(:nth-child(3n)) {
+.page-footer__social-item:nth-child(2) {
+  svg {
+    margin-top: 13px;
+  }
+}
+
+.page-footer__social-item:not(:nth-child(3n)) {
   margin-right: 13px;
 }
 
@@ -52,7 +63,7 @@
 }
 
 .page-footer__copyright-description {
-  margin: 0 8px 0 5px;
+  margin: 0 10px 0 5px;
   line-height: 1;
 
   // outline: black solid 1px;
@@ -69,6 +80,7 @@
 
 @media (min-width: @page-width-tablet) {
   .page-footer {
+    min-height: 127px;
     padding: 63px 20px;
     flex-direction: row;
     justify-content: space-between;
@@ -79,23 +91,63 @@
     display: flex;
   }
 
-  .social-icons__list {
+  .page-footer--photo {
+    padding: 66px 20px;
+  }
+
+  .page-footer--form {
+    padding: 56px 20px;
+  }
+
+  .page-footer__social-list {
     padding: 0;
+    margin-right: 15px;
+  }
+
+  .page-footer__copyright {
+    margin-right: -5px;
   }
 }
 
 @media (min-width: @page-width-desktop-inner) {
   .page-footer {
     padding: 33px 0;
-    min-height: 140px;
+    min-height: 146px;
     justify-content: space-around;
   }
 
   .page-footer--index {
-    min-height: 200px;
+    min-height: 197px;
   }
 
   .page-footer--photo {
     min-height: 270px;
+
+    .page-footer__social-list {
+      margin-right: -20px;
+    }
+  }
+
+  .page-footer--form {
+    .page-footer__social-list {
+      margin-right: -20px;
+    }
+  }
+
+  .page-footer__logo {
+    margin-left: 12px;
+    background: url("../../img/logo-pink-blue-desktop.svg") center 2px no-repeat;
+  }
+
+  .page-footer__social-list {
+    margin-right: -10px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 7px;
+  }
+
+  .page-footer__copyright-description {
+    font-size: @text-size-normal;
   }
 }
