@@ -9,10 +9,8 @@
   // outline-offset: -1px;
 }
 
-// main-nav__opened .main-nav__toggle
 .main-nav__toggle {
   position: absolute;
-  // top: 21px;
   top: -49px;
   right: 18px;
   z-index: 2;
@@ -25,14 +23,13 @@
   background-position: center;
   cursor: pointer;
 }
-// лекция 5
-// .main-nav__closed .main-nav__toggle {
-// сюда поместить отрисовку гамбургера
-// }
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
 
 @media (min-width: @page-width-tablet) {
   .main-nav__toggle {
-    // top: 45px;
     top: -65px;
     right: 18px;
   }

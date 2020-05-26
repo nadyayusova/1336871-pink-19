@@ -5,7 +5,10 @@
 @media (min-width: @page-width-tablet) {
   .research {
     display: block;
-    padding: 96px 25px 20px 330px;
+    padding: 96px 25px 85px 330px;
+    background: url("../../img/icon-editor-diagram-fill.svg") 40px 115px no-repeat,
+      url("../../img/icon-timer.svg") 15px 59px no-repeat;
+    background-size: 200px 200px, 250px 275px;
   }
 
   .research__wrapper::after {
@@ -51,7 +54,13 @@
 
 @media (min-width: @page-width-desktop-inner) {
   .research {
-    padding: 143px 160px 20px 496px;
+    padding: 143px 160px 163px 496px;
+    background-color: @bg-color-sup;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-position: 155px 120px, 106px 51px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 253px 253px, 350px 345px;
   }
 
   .research__wrapper::after {
