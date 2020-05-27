@@ -121,6 +121,7 @@
   .gallery__item {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 21px;
     //временно
     // outline: black solid 1px;
     // outline-offset: -1px;
@@ -145,7 +146,8 @@
 
   .gallery__image--panorama {
     width: @page-width-tablet;
-    min-height: 508px;
+    object-fit: cover;
+    min-height: 509px;
   }
 
   .gallery__panorama-wrapper::after {
@@ -157,7 +159,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 80px;
-    padding: 25px 28px 24px;
+    padding: 24px 28px;
   }
 
   .gallery__button-text::before {
@@ -238,7 +240,7 @@
 
   .gallery__item:not(:first-child) {
     width: 320px;
-    min-height: 610px;
+    min-height: 609px;
   }
 
   .gallery__image {
@@ -252,7 +254,7 @@
 
   .gallery__image--panorama {
     width: @page-width-desktop;
-    min-height: 505px;
+    min-height: 506px;
   }
 
   .gallery__panorama-wrapper::after {
